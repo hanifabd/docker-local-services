@@ -1,2 +1,2 @@
 <!-- Run Docker Instance -->
-docker compose up
+Linux Terminal / Gitbash : `docker-compose up -d`
