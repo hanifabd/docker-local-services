@@ -5,6 +5,6 @@ Inspect Container: `docker inspect <container_id>`
 
 ## Postgres Services
 - PgAdmin4: `http://localhost:5050/`
-- Database: `172.18.0.3`
+- Database: `172.18.0.2`
     - username: `root`
     - password: `root`
