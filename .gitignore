@@ -1,3 +1,6 @@
-pgadmin-data
-postgres-data
+pgadmin-data/
+postgres-data/
 __pycache__/
+etcd/
+minio/
+milvus/
