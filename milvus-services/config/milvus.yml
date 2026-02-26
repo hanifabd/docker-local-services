@@ -1,0 +1,7 @@
+common:
+  security:
+    authorizationEnabled: true
+
+rootCoord:
+  security:
+    defaultRootPassword: "Milvus@123"

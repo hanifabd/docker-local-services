@@ -45,11 +45,9 @@ services:
     environment:
       ETCD_ENDPOINTS: etcd:2379
       MINIO_ADDRESS: minio:9000
-      COMMON_SECURITY_AUTHORIZATION_ENABLED: "true"
-      MILVUS_USERNAME: root
-      MILVUS_PASSWORD: root
     volumes:
       - ./milvus:/var/lib/milvus
+      - ./config/milvus.yml:/milvus/configs/milvus.yml
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
       interval: 30s
@@ -70,8 +68,8 @@ services:
       - "8000:3000"
     environment:
       MILVUS_URL: standalone:19530
-      MILVUS_USERNAME: admin@admin.com
-      MILVUS_PASSWORD: root
+      MILVUS_USERNAME: root
+      MILVUS_PASSWORD: Milvus@123
     depends_on:
       - standalone
 
