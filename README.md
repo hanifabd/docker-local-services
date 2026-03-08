@@ -17,8 +17,13 @@ Inspect Container: `docker inspect <container_id>`
     - CONTAINER PORT - 3030
 
 ```
+# Local Network only -> same ip could be access
 ports:
   - "8080:5000"
+
+# Local only
+ports:
+  - "127.0.0.1:8080:5000"
 
 Internet → VPS:8080 → Container:5000
 
