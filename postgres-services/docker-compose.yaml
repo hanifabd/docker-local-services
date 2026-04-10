@@ -10,6 +10,8 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: strongpassword
       POSTGRES_DB: appdb
+    ports:
+      - "5432:5432"
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
     networks:

@@ -1,5 +1,4 @@
-pgadmin-data/
-postgres-data/
+data
 __pycache__/
 etcd/
 minio/
